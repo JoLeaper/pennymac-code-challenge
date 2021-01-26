@@ -1,7 +1,8 @@
 import React from 'react';
 import ListItem from './ListItem/ListItem';
 
-function List(props) {
+function List({tvList}) {
+    console.log(tvList);
     return (
         <div>
             This is the List of Characters

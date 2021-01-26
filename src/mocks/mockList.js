@@ -394,7 +394,7 @@ const mockList = [
     medium: "http://static.tvmaze.com/uploads/images/medium_portrait/129/323202.jpg",
     original: "http://static.tvmaze.com/uploads/images/original_untouched/129/323202.jpg"
     },
-    summary: "<p>The web series tells the origin story of Hannah, also known as "Bicycle Girl", the walker whom Rick Grimes killed in the first episode. Rick risks a walker encounter to go back and find Hannah before he sets out for Atlanta.</p>",
+    summary: "<p>The web series tells the origin story of Hannah, also known as \"Bicycle Girl\", the walker whom Rick Grimes killed in the first episode. Rick risks a walker encounter to go back and find Hannah before he sets out for Atlanta.</p>",
     updated: 1506588219,
     _links: {
     self: {
