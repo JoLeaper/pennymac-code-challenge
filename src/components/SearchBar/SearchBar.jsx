@@ -7,6 +7,7 @@ function SearchBar({setTvList}) {
     const handleSubmit = async(e) => {
         e.preventDefault();
         const results = await fetchShows(searchQuery);
+        setTvList(results);
         console.log(results);
         // setSearchQuery(queryResults)
     }
