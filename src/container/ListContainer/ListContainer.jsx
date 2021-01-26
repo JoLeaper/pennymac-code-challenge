@@ -5,8 +5,9 @@ import mockList from '../../mocks/mockList';
 
 function ListContainer(props) {
     const [tvList, setTvList] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
-    // temporary useEffect call in lieu of tests
+    // temporary useEffect call in lieu of tests/calls in mock data
     useEffect(() => {
         setTvList(mockList);
     }, []);
@@ -14,8 +15,9 @@ function ListContainer(props) {
 
     return (
         <div>
-            <SearchBar setTvList={setTvList}/>
-            <List tvList={tvList}/>
+            <SearchBar setTvList={setTvList} setIsLoading={setIsLoading}/>
+            <hr></hr>
+            <List tvList={tvList} isLoading={isLoading}/>
         </div>
     );
 }

@@ -2,9 +2,11 @@ import React from 'react';
 
 function ListItem({tvShow}) {
     const showName = tvShow.show.name;
+    const showImage = tvShow.show.image ? tvShow.show.image.medium : 'https://placekitten.com/200/300'
     return (
         <>
-            <p>{showName}</p>
+            <img src={showImage} />
+            <p className="list-p">{showName}</p>
         </>
     );
 }
