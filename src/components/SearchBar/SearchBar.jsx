@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import fetchShows from '../../services/fetchShows';
 import './SearchBar.css';
 
-function SearchBar({setTvList}) {
+function SearchBar({setTvList, setIsLoading}) {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSubmit = async(e) => {
         e.preventDefault();
+        setIsLoading(true);
         const results = await fetchShows(searchQuery);
         setTvList(results);
         console.log(results);
+        setIsLoading(false);
         // setSearchQuery(queryResults)
     }
 

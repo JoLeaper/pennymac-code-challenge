@@ -1,15 +1,20 @@
 .list-div {
     position: relative;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: center;
+    justify-content: center;
+}
+
+.list-loader {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .list-ul {
   list-style-type: none;
-  width: 100%;
+  width: 300px;
 }
  
 .list-li .list-p {
@@ -19,7 +24,6 @@
 .list-li {
   padding: 5px;
   overflow: auto;
-  display: inline;
 }
  
 .list-li:hover {
