@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ListItem from './ListItem/ListItem';
 import './List.css'
 
 function List({tvList, isLoading}) {
-
     return (
     <div className="list-div">
         {isLoading 
