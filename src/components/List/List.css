@@ -1,3 +1,36 @@
-ul {
-    list-style-type: none;
+.list-div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
 }
+
+.list-ul {
+  list-style-type: none;
+  width: 100%;
+}
+ 
+.list-li .list-p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+.list-li {
+  padding: 5px;
+  overflow: auto;
+  display: inline;
+}
+ 
+.list-li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/* @media(max-width: 411px) {
+    .list-div {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */

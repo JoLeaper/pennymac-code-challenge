@@ -15,6 +15,7 @@ function ListContainer(props) {
     return (
         <div>
             <SearchBar setTvList={setTvList}/>
+            <hr></hr>
             <List tvList={tvList}/>
         </div>
     );
