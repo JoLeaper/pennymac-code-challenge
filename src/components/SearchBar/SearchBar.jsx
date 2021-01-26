@@ -1,9 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import fetchShows from '../../services/fetchShows';
 
-function SearchBar(props) {
+function SearchBar({setTvList}) {
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        const results = await fetchShows(searchQuery);
+        setTvList(results);
+        console.log(results);
+        // setSearchQuery(queryResults)
+    }
+
     return (
         <div>
-            This is the search bar
+            <p>This is the search bar</p>
+            <form onSubmit={e => handleSubmit(e)}>
+                <input onChange={e => setSearchQuery(e.target.value)} type="text" placeholder="e.g. The Walking Dead"/>
+                <button>Search</button>
+            </form>
+
         </div>
     );
 }
