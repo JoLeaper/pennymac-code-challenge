@@ -13,25 +13,29 @@ input[type=text]::-webkit-outer-spin-button {
     
 }
 
-.search-text{
-    width: 20vw;
-    height: 5vh;
-    text-align: center;
-    margin-bottom: 1vh;
-    font-size: large;
+@media(min-width: 900px) {
+    .search-text{
+        width: 20vw;
+        height: 5vh;
+        text-align: center;
+        margin-bottom: 1vh;
+        font-size: large;
 }
 
-.search-btn{
-    display: block;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 0;
-    width: 10vw;
-    height: 3vw;
+    .search-btn{
+        display: block;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 0;
+        width: 10vw;
+        height: 3vw;
+    }
 }
+
+
 
 input {
     font: 200 12px/1.5 Georgia, Times New Roman, serif;
@@ -41,7 +45,7 @@ input {
 }
 
 
-@media(max-width: 411px) {
+@media(max-width: 900px) {
     .search-text{
         width: 100vw;
         height: 5vh;
