@@ -1,15 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-ListItem.propTypes = {
-    
-};
-
-function ListItem(props) {
+function ListItem({tvShow}) {
+    const showName = tvShow.show.name;
     return (
-        <div>
-            This is an Item in the List
-        </div>
+        <>
+            <p>{showName}</p>
+        </>
     );
 }
 

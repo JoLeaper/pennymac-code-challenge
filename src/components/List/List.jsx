@@ -2,12 +2,18 @@ import React from 'react';
 import ListItem from './ListItem/ListItem';
 
 function List({tvList}) {
-    console.log(tvList);
+
     return (
-        <div>
-            This is the List of Characters
-            <ListItem />
-        </div>
+    <ul>
+        This is a List of Tv Shows
+        {tvList.map((tvShow, i) => {
+            return (
+            <li key={i}>
+                <ListItem tvShow={tvShow} />
+            </li>    
+            )
+        })}
+    </ul>
     );
 }
 
