@@ -1,9 +1,14 @@
 const url = 'https://api.tvmaze.com/search/shows?q=';
 
 const fetchShows = async(searchQuery) => {
-    const response = await fetch(url + searchQuery);
-    const shows = await response.json();
-    return shows;
+    try {
+        const response = await fetch(url + searchQuery);
+        const shows = await response.json();
+        return shows;
+    } catch(err) {
+        alert(err)
+    }
+
 };
 
 export default fetchShows;
