@@ -10,9 +10,7 @@ function SearchBar({setTvList, setIsLoading}) {
         setIsLoading(true);
         const results = await fetchShows(searchQuery);
         setTvList(results);
-        console.log(results);
         setIsLoading(false);
-        // setSearchQuery(queryResults)
     }
 
     return (
