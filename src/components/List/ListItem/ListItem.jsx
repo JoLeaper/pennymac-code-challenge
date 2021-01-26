@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ListItem({tvShow}) {
-    const showName = tvShow.show.name;
-    const showImage = tvShow.show.image ? tvShow.show.image.medium : 'https://placekitten.com/200/300'
+ListItem.propTypes = {
+    
+};
+
+function ListItem(props) {
     return (
-        <>
-            <img src={showImage} />
-            <p className="list-p">{showName}</p>
-        </>
+        <div>
+            This is an Item in the List
+        </div>
     );
 }
 

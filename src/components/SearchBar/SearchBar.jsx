@@ -1,24 +1,9 @@
-import React, {useState} from 'react';
-import fetchShows from '../../services/fetchShows';
-import './SearchBar.css';
+import React from 'react';
 
-function SearchBar({setTvList, setIsLoading}) {
-    const [searchQuery, setSearchQuery] = useState('');
-
-    const handleSubmit = async(e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        const results = await fetchShows(searchQuery);
-        setTvList(results);
-        setIsLoading(false);
-    }
-
+function SearchBar(props) {
     return (
-        <div className="search-box">
-            <form onSubmit={e => handleSubmit(e)}>
-                <input className="search-text" onChange={e => setSearchQuery(e.target.value)} type="text" placeholder="e.g. The Walking Dead"/>
-                <input type="submit" value="Submit" className="search-btn" />
-            </form>
+        <div>
+            This is the search bar
         </div>
     );
 }
